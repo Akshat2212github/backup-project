@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Sender</title></head>
+<body>
+    <h2>Send a message</h2>
+    <form method="POST">
+        <input type="text" name="message" placeholder="Enter message" required>
+        <button type="submit">Send</button>
+    </form>
+    {% if result %}
+        <p><strong>Status:</strong> {{ result }}</p>
+    {% endif %}
+</body>
+</html>
